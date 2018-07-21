@@ -4,7 +4,7 @@
 multiplicacion = 1
 
 10.times do |i|
+  i += 1
   multiplicacion *= i
 end
-
-puts multiplicacion
+puts 'El factorial del número 10 es: ', multiplicacion

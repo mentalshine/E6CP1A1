@@ -24,3 +24,40 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+=begin
+          for i in 1..4
+            for j in 1..4
+              puts " #{j * i}"
+            end
+            puts ''
+          end
+=end
+a = "<table>
+<tbody>"
+b = '<tr>'
+e = '</tr>'
+f = "<tbody>
+</table>"
+
+puts a
+1.times do |i|
+  puts b
+  for j in 1..4
+    puts "  <td> #{j} </td>"
+  end
+    puts e
+
+    puts b
+  for j in 5..8
+    puts "  <td> #{j} </td>"
+  end
+    puts e
+
+    puts b
+  for j in 9..12
+    puts "  <td> #{j} </td>"
+  end
+    puts e
+    puts f
+end

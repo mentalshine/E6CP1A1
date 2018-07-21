@@ -2,8 +2,10 @@
 # pero no funciona porque algo falta, ¿puedes arreglarlo?
 # TIP: El total debería sumar 55.
 
+
+suma = 0
 10.times do |i|
+  i += 1
   suma += i
 end
-
-puts suma
+puts 'El total de la suma de los números del 1 al 10 es: ' , suma
